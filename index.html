@@ -3,26 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simeon Vintage is verhuisd — Studio Oxford</title>
-<meta name="description" content="Simeon Vintage maakt sinds mei 2026 deel uit van Studio Oxford Group. Onze collectie premium vintage Ralph Lauren is verhuisd naar studiooxford.com.">
+<title>Simeon Vintage is overgenomen door Studio Oxford</title>
+<meta name="description" content="Simeon Vintage is sinds mei 2026 overgenomen door Studio Oxford Group. Onze collectie vintage Ralph Lauren overhemden, sweatshirts en hoodies vind je nu op studiooxford.com.">
 <meta name="robots" content="noindex, follow">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FAFAF8'/%3E%3Ctext x='50%25' y='65%25' text-anchor='middle' font-family='Helvetica' font-size='18' fill='%231A1814' font-weight='700'%3ESO%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F0EDE6'/%3E%3Ctext x='50%25' y='66%25' text-anchor='middle' font-family='Georgia' font-size='20' fill='%231C1C1A' font-style='italic'%3ES%3C/text%3E%3C/svg%3E">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Simeon Vintage is nu Studio Oxford">
-<meta property="og:description" content="Sinds mei 2026 maakt Simeon Vintage deel uit van Studio Oxford Group. Bekijk onze nieuwe collectie op studiooxford.com.">
+<meta property="og:description" content="Sinds mei 2026 maakt Simeon Vintage deel uit van Studio Oxford Group. Bekijk de nieuwe collectie op studiooxford.com.">
 <meta property="og:url" content="https://www.simeonvintage.nl">
 
 <style>
-  /* ── Studio Oxford brand tokens ─────────────────────────────── */
+  /* ── Studio Oxford brand tokens (uit brand book v6) ───────────── */
   :root {
-    --so-paper:  #FAFAF8;
-    --so-ink:    #1A1814;
-    --so-mute:   #6F6A62;
-    --so-line:   #E0DDD8;
-    --so-fill:   #F2EDE3;
-    --so-gold:   #B89A6E;
+    --linen:      #F0EDE6;
+    --linen-soft: #F5F2EB;
+    --paper:      #FAFAF8;
+    --ink:        #1C1C1A;
+    --charcoal:   #3E3E3A;
+    --ash:        #585852;
+    --muted:      #8A8880;
+    --border:     #DDD9D0;
+    --navy:       #14223F;
   }
 
   * { box-sizing: border-box; }
@@ -30,225 +33,247 @@
   html, body {
     margin: 0;
     padding: 0;
-    background: var(--so-paper);
-    color: var(--so-ink);
+    background: var(--linen-soft);
+    color: var(--ink);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
-    line-height: 1.55;
+    font-size: 14px;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* ── Layout ─────────────────────────────────────────────────── */
+  /* ── Layout ───────────────────────────────────────────────────── */
   .page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
-
   .wrap {
     width: 100%;
     max-width: 640px;
     margin: 0 auto;
-    padding: 32px 24px;
+    padding: 28px 24px;
   }
 
-  /* ── Header / wordmark ──────────────────────────────────────── */
+  /* ── Header / wordmark ────────────────────────────────────────── */
   .head {
     text-align: center;
-    padding: 48px 0 56px;
-    border-bottom: 1px solid var(--so-line);
+    padding: 44px 0 44px;
+    border-bottom: 0.5px solid var(--border);
   }
-
   .wordmark {
-    font-size: 14px;
-    font-weight: 700;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
     letter-spacing: 0.32em;
     text-transform: uppercase;
-    color: var(--so-ink);
+    color: var(--ink);
     line-height: 1;
   }
   .wordmark-sub {
-    margin-top: 6px;
-    font-size: 9px;
+    margin-top: 8px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.01em;
+  }
+
+  /* ── Hero ─────────────────────────────────────────────────────── */
+  .hero {
+    padding: 72px 0 48px;
+    text-align: center;
+  }
+  .eyebrow {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 10px;
     font-weight: 500;
     letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: var(--so-mute);
+    color: var(--muted);
+    margin-bottom: 28px;
   }
-
-  /* ── Hero ───────────────────────────────────────────────────── */
-  .hero {
-    padding: 64px 0 48px;
-    text-align: center;
-  }
-
-  .eyebrow {
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
-    color: var(--so-gold);
-    margin-bottom: 24px;
-  }
-
   h1 {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: clamp(32px, 6vw, 44px);
     font-weight: 400;
-    line-height: 1.12;
+    font-size: clamp(36px, 6.4vw, 56px);
+    line-height: 1.05;
     letter-spacing: -0.02em;
-    color: var(--so-ink);
-    margin: 0 0 24px;
+    color: var(--ink);
+    margin: 0 0 8px;
   }
-
+  h1 em {
+    font-style: italic;
+    color: var(--charcoal);
+  }
   .lead {
-    font-size: 16px;
-    line-height: 1.65;
-    color: var(--so-mute);
-    max-width: 520px;
-    margin: 0 auto 36px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ash);
+    max-width: 480px;
+    margin: 22px auto 36px;
   }
 
-  .lead strong {
-    color: var(--so-ink);
-    font-weight: 600;
+  /* Short EN line directly under hero */
+  .hero-en {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+    margin: 0 auto 32px;
+    max-width: 460px;
+    line-height: 1.55;
   }
 
-  /* ── CTA button ─────────────────────────────────────────────── */
+  /* ── CTA ──────────────────────────────────────────────────────── */
   .cta {
     display: inline-block;
-    background: var(--so-ink);
-    color: var(--so-paper);
-    font-size: 13px;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
     font-weight: 500;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 18px 36px;
-    border: 1px solid var(--so-ink);
-    transition: background 0.18s ease, color 0.18s ease;
+    padding: 18px 40px;
+    border: 0.5px solid var(--ink);
+    transition: background 0.2s ease, color 0.2s ease;
   }
   .cta:hover {
     background: transparent;
-    color: var(--so-ink);
+    color: var(--ink);
   }
-
   .cta-meta {
     display: block;
-    margin-top: 14px;
+    margin-top: 18px;
     font-size: 11.5px;
-    color: var(--so-mute);
+    color: var(--muted);
     letter-spacing: 0.04em;
   }
   .cta-meta a {
-    color: var(--so-mute);
+    color: var(--muted);
     text-decoration: underline;
     text-underline-offset: 2px;
   }
+  .cta-meta a:hover { color: var(--ink); }
 
-  /* ── Divider rule ───────────────────────────────────────────── */
+  /* ── Section divider ──────────────────────────────────────────── */
   .rule {
-    border-top: 1px solid var(--so-line);
+    border-top: 0.5px solid var(--border);
     margin: 56px 0;
   }
 
-  /* ── FAQ ────────────────────────────────────────────────────── */
+  /* ── FAQ ──────────────────────────────────────────────────────── */
   .faq h2 {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 400;
     letter-spacing: -0.01em;
     text-align: center;
-    margin: 0 0 32px;
+    margin: 0 0 36px;
   }
-
   .faq-item {
-    border-top: 1px solid var(--so-line);
+    border-top: 0.5px solid var(--border);
     padding: 22px 0;
   }
-  .faq-item:last-child { border-bottom: 1px solid var(--so-line); }
-
+  .faq-item:last-child { border-bottom: 0.5px solid var(--border); }
   .faq-q {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--so-ink);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
     margin-bottom: 8px;
     letter-spacing: 0.01em;
   }
   .faq-a {
-    font-size: 14px;
-    color: var(--so-mute);
-    line-height: 1.6;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--ash);
+    line-height: 1.65;
   }
   .faq-a a {
-    color: var(--so-ink);
+    color: var(--ink);
     text-decoration: underline;
     text-underline-offset: 2px;
   }
 
-  /* ── EN block ──────────────────────────────────────────────── */
+  /* ── EN block (longer summary onderaan) ───────────────────────── */
   .en {
     margin-top: 56px;
-    padding: 28px 24px;
-    background: var(--so-fill);
+    padding: 32px 28px;
+    background: var(--linen);
     text-align: center;
+    border: 0.5px solid var(--border);
   }
   .en-eyebrow {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 9.5px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: var(--so-mute);
-    margin-bottom: 12px;
+    color: var(--muted);
+    margin-bottom: 14px;
   }
   .en-body {
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: var(--so-ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--charcoal);
     max-width: 480px;
-    margin: 0 auto 18px;
+    margin: 0 auto 20px;
   }
   .en-cta {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.14em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: var(--so-ink);
+    color: var(--ink);
     text-decoration: none;
-    border-bottom: 1px solid var(--so-ink);
-    padding-bottom: 2px;
+    border-bottom: 0.5px solid var(--ink);
+    padding-bottom: 3px;
   }
 
-  /* ── Footer ─────────────────────────────────────────────────── */
+  /* ── Footer ───────────────────────────────────────────────────── */
   .foot {
     margin-top: auto;
-    padding: 40px 0 32px;
+    padding: 44px 0 36px;
     text-align: center;
-    border-top: 1px solid var(--so-line);
+    border-top: 0.5px solid var(--border);
   }
   .foot p {
-    font-size: 11.5px;
-    color: var(--so-mute);
-    letter-spacing: 0.04em;
-    margin: 4px 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 10.5px;
+    color: var(--muted);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 6px 0;
   }
   .foot a {
-    color: var(--so-mute);
+    color: var(--muted);
     text-decoration: none;
-    border-bottom: 1px solid var(--so-line);
+    border-bottom: 0.5px solid var(--border);
     padding-bottom: 1px;
   }
-  .foot a:hover { color: var(--so-ink); border-bottom-color: var(--so-ink); }
+  .foot a:hover { color: var(--ink); border-bottom-color: var(--ink); }
 
-  /* ── Mobile tweaks ──────────────────────────────────────────── */
+  /* ── Mobile ───────────────────────────────────────────────────── */
   @media (max-width: 540px) {
-    .head { padding: 36px 0 40px; }
-    .hero { padding: 48px 0 36px; }
-    .cta  { padding: 16px 28px; font-size: 12px; }
+    .head { padding: 32px 0 32px; }
+    .hero { padding: 52px 0 36px; }
+    .cta  { padding: 16px 30px; font-size: 10.5px; }
     .rule { margin: 40px 0; }
-    .en   { margin-top: 40px; padding: 22px 18px; }
+    .en   { margin-top: 40px; padding: 24px 20px; }
     .wrap { padding: 20px 18px; }
+    .lead { font-size: 16px; }
   }
 </style>
 </head>
@@ -260,21 +285,27 @@
     <!-- ── Header / wordmark ── -->
     <header class="head">
       <div class="wordmark">STUDIO OXFORD</div>
-      <div class="wordmark-sub">Amsterdam · est. 2026</div>
+      <div class="wordmark-sub">est. 2026</div>
     </header>
 
     <!-- ── Hero ── -->
     <section class="hero">
       <div class="eyebrow">Mei 2026</div>
-      <h1>Simeon Vintage is verhuisd.</h1>
+      <h1>Simeon Vintage is <em>overgenomen.</em></h1>
+
       <p class="lead">
-        Sinds mei 2026 is <strong>Simeon Vintage</strong> overgenomen door
-        <strong>Studio Oxford Group</strong>. Onze volledige collectie premium
-        vintage Ralph Lauren — overhemden, sweatshirts en hoodies — vind je
-        nu op het nieuwe Studio Oxford.
+        Sinds mei 2026 maakt Simeon Vintage deel uit van Studio Oxford Group.
+        Onze collectie vintage Ralph Lauren overhemden, sweatshirts, hoodies
+        en meer vind je nu op studiooxford.com.
       </p>
+
+      <p class="hero-en">
+        Simeon Vintage has been acquired by Studio Oxford Group as of May 2026.
+        Our full vintage collection has moved to studiooxford.com.
+      </p>
+
       <a class="cta" href="https://studiooxford.com" rel="noopener">
-        Bekijk de nieuwe collectie
+        Bekijk de collectie
       </a>
       <span class="cta-meta">
         Vragen? Mail
@@ -300,8 +331,9 @@
       <div class="faq-item">
         <div class="faq-q">Verandert de collectie?</div>
         <div class="faq-a">
-          Nee — dezelfde zorgvuldig gesourcede vintage Ralph Lauren, maar nu
-          met een uitgebreidere collectie en betere bundles op
+          De stijl blijft, maar het assortiment groeit. Naast vintage Ralph Lauren
+          overhemden vind je nu ook sweatshirts, hoodies en uitgebreidere vintage
+          selecties op
           <a href="https://studiooxford.com">studiooxford.com</a>.
         </div>
       </div>
@@ -309,34 +341,24 @@
       <div class="faq-item">
         <div class="faq-q">Werkt mijn oude account nog?</div>
         <div class="faq-a">
-          Studio Oxford draait op een nieuw platform. Maak eenmalig een
-          nieuw account aan op
-          <a href="https://studiooxford.com">studiooxford.com</a>
-          — sneller en met betere features.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q">Krijg ik nog korting als oude klant?</div>
-        <div class="faq-a">
-          Ja. Mail
-          <a href="mailto:customerservice@studiooxford.com">customerservice@studiooxford.com</a>
-          met "Simeon klant" in de onderwerp-regel en je krijgt een
-          welcome-back code voor je eerste Studio Oxford bestelling.
+          Nee, oude accounts werken niet meer. Je kunt eenmalig een nieuw
+          account aanmaken op
+          <a href="https://studiooxford.com">studiooxford.com</a>.
+          Dat duurt minder dan een minuut.
         </div>
       </div>
     </section>
 
-    <!-- ── EN ── -->
+    <!-- ── EN samenvatting onderaan ── -->
     <section class="en">
       <div class="en-eyebrow">English</div>
       <p class="en-body">
-        Simeon Vintage has been acquired by <strong>Studio Oxford Group</strong>
-        as of May 2026. Our full collection of premium vintage Ralph Lauren
-        has moved to our new home.
+        Simeon Vintage has been acquired by Studio Oxford Group as of May 2026.
+        Our full collection of vintage Ralph Lauren shirts, sweatshirts, hoodies
+        and more has moved to our new home.
       </p>
       <a class="en-cta" href="https://studiooxford.com" rel="noopener">
-        Visit Studio Oxford →
+        Visit Studio Oxford
       </a>
     </section>
 
@@ -344,10 +366,10 @@
 
   <!-- ── Footer ── -->
   <footer class="foot">
-    <p>Studio Oxford Group · Amsterdam, NL</p>
+    <p>Studio Oxford Group</p>
     <p>
       <a href="https://studiooxford.com">studiooxford.com</a>
-      &nbsp;·&nbsp;
+      &nbsp;&nbsp;
       <a href="mailto:customerservice@studiooxford.com">customerservice@studiooxford.com</a>
     </p>
   </footer>
